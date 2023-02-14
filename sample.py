@@ -2,3 +2,11 @@ text = "Lorem Ipsum is simply dummy text of the printing and typesetting industr
 
 with open("lorem_ipsum.txt", "w") as file:
     file.write(text)
+
+with open("lorem_ipsum.txt", "r") as file:
+    text = file.read()
+
+reversed_text = text[::-1]
+
+with open("reversed_lorem_ipsum.txt", "w") as file:
+    file.write(reversed_text)
